@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Button</title>
+</head>
+<body>
+    <button id="emailButton">Send Email</button>
+    <p id="message" style="color: red;"></p>
+
+    <script>
+        function sendEmail() {
+            var email = "info@kashmiruniversity.net";
+            var cc = "principal@gdcpulwama.edu.in";
+            var subject = " Continued Issues with UG 3rd Semester Exam Results.";
+            var body = "body";
+            var mailto_link = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            window.location.href = mailto_link;
+        }
+
+        document.getElementById('emailButton').addEventListener('click', function() {
+            sendEmail();
+            setTimeout(function() {
+                document.getElementById('message').textContent = "If the email client didn't open, please check your email client settings.";
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
