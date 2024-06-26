@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Action KU</title>
+    <title>Email Button</title>
 </head>
 <body>
     <button id="emailButton">Send Email</button>
@@ -14,7 +14,27 @@
             var email = "info@kashmiruniversity.net";
             var cc = "principal@gdcpulwama.edu.in";
             var subject = " Continued Issues with UG 3rd Semester Exam Results.";
-            var body = "body";
+            var body = `We, the students of GDC Pulwama affiliated with Kashmir University, appreciate the recent updates to our UG 3rd semester exam results. However, some critical issues remain unresolved:
+
+*Current Issues:*
+1. *Partial Satisfaction with Results:* While some students received corrected marks, many are still not satisfied with their results.
+2. *Grade Discrepancies:* Some students who had passed yesterday are now marked as failed in certain subjects.
+3. *Attendance Issues Resolved:* We acknowledge that the incorrect absence marking has been addressed.
+
+*Our Continued Demands:*
+1. *Free Reevaluation:* We request a thorough reevaluation of all exam papers without any fee, as these discrepancies are not our fault.
+2. *Accountability:* We urge action against those responsible for the grading inconsistencies and improper evaluation.
+3. *Transparent Process:* Ensure a transparent and fair reevaluation process to restore trust in the evaluation system.
+
+We seek your prompt and effective action to resolve these issues completely and fairly.
+
+Thank you for your attention.
+
+Sincerely, 
+All the students of Affiliated colleges of KU.
+3rd Semester.
+GDC Pulwama.
+`;
             var mailto_link = `mailto:${email}?cc=${cc}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
             window.location.href = mailto_link;
