@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Button</title>
+    <style>
+        div>button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);  
+        }
+        button{
+            color: white;
+            background-color: rgb(39, 140, 255);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+    <title>Legal Action KU</title>
 </head>
-<body>
-    <button id="emailButton">Send Email</button>
+<body><div><button id="emailButton">Send Email</button></div>
+    
     <p id="message" style="color: red;"></p>
 
     <script>
